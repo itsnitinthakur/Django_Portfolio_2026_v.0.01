@@ -1,0 +1,495 @@
+# Russian translations for the Oxunjon Abdullayev portfolio site.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-03 14:23+0500\n"
+"PO-Revision-Date: 2026-09-03 14:23+0500\n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: portfolio/models.py:7 portfolio/templates/portfolio/index.html:245
+msgid "Backend"
+msgstr "Бэкенд"
+
+#: portfolio/models.py:8
+msgid "Frontend"
+msgstr "Фронтенд"
+
+#: portfolio/models.py:9
+msgid "Database"
+msgstr "База данных"
+
+#: portfolio/models.py:10
+msgid "DevOps & Infrastructure"
+msgstr "DevOps и инфраструктура"
+
+#: portfolio/models.py:11
+msgid "Tools & Workflow"
+msgstr "Инструменты и процессы"
+
+#: portfolio/models.py:12
+msgid "Other"
+msgstr "Другое"
+
+#: portfolio/templates/portfolio/index.html:8
+#: portfolio/templates/portfolio/index.html:23
+#: portfolio/templates/portfolio/index.html:31 portfolio/views.py:86
+msgid "Python Backend Developer"
+msgstr "Python Backend-разработчик"
+
+#: portfolio/templates/portfolio/index.html:9
+#: portfolio/templates/portfolio/index.html:24
+msgid ""
+"Python Backend Developer specializing in Django, FastAPI, and cloud-native "
+"solutions. Based in Karshi, Uzbekistan."
+msgstr ""
+"Python Backend-разработчик, специализирующийся на Django, FastAPI и "
+"cloud-native решениях. Живу в Карши, Узбекистан."
+
+#: portfolio/templates/portfolio/index.html:32
+msgid ""
+"Python Backend Developer specializing in Django, FastAPI, and cloud-native "
+"solutions."
+msgstr ""
+"Python Backend-разработчик, специализирующийся на Django, FastAPI и "
+"cloud-native решениях."
+
+#: portfolio/templates/portfolio/index.html:62
+#: portfolio/templates/portfolio/index.html:95
+#: portfolio/templates/portfolio/index.html:702
+msgid "About"
+msgstr "Обо мне"
+
+#: portfolio/templates/portfolio/index.html:63
+#: portfolio/templates/portfolio/index.html:96
+#: portfolio/templates/portfolio/index.html:703
+msgid "Skills"
+msgstr "Навыки"
+
+#: portfolio/templates/portfolio/index.html:64
+#: portfolio/templates/portfolio/index.html:97
+#: portfolio/templates/portfolio/index.html:163
+#: portfolio/templates/portfolio/index.html:704
+msgid "Projects"
+msgstr "Проекты"
+
+#: portfolio/templates/portfolio/index.html:65
+#: portfolio/templates/portfolio/index.html:98
+#: portfolio/templates/portfolio/index.html:158
+#: portfolio/templates/portfolio/index.html:705
+msgid "Experience"
+msgstr "Опыт"
+
+#: portfolio/templates/portfolio/index.html:66
+#: portfolio/templates/portfolio/index.html:99
+msgid "Certificates"
+msgstr "Сертификаты"
+
+#: portfolio/templates/portfolio/index.html:67
+#: portfolio/templates/portfolio/index.html:100
+msgid "Hackathons"
+msgstr "Хакатоны"
+
+#: portfolio/templates/portfolio/index.html:68
+#: portfolio/templates/portfolio/index.html:101
+#: portfolio/templates/portfolio/index.html:706
+msgid "Languages"
+msgstr "Языки"
+
+#: portfolio/templates/portfolio/index.html:69
+#: portfolio/templates/portfolio/index.html:102
+#: portfolio/templates/portfolio/index.html:707
+msgid "Contact"
+msgstr "Контакты"
+
+#: portfolio/templates/portfolio/index.html:73
+msgid "Change language"
+msgstr "Сменить язык"
+
+#: portfolio/templates/portfolio/index.html:82
+msgid "Toggle theme"
+msgstr "Переключить тему"
+
+#: portfolio/templates/portfolio/index.html:85
+msgid "Hire Me"
+msgstr "Нанять меня"
+
+#: portfolio/templates/portfolio/index.html:86
+msgid "Menu"
+msgstr "Меню"
+
+#: portfolio/templates/portfolio/index.html:119
+msgid "Available for opportunities"
+msgstr "Открыт для предложений"
+
+#: portfolio/templates/portfolio/index.html:126
+msgid ""
+"I architect scalable, high-performance backend systems using Django and "
+"cloud-native technologies. Passionate about clean code, RESTful APIs, and "
+"solutions that last."
+msgstr ""
+"Я проектирую масштабируемые, высокопроизводительные бэкенд-системы с "
+"использованием Django и cloud-native технологий. Увлечён чистым кодом, "
+"RESTful API и решениями, которые служат долго."
+
+#: portfolio/templates/portfolio/index.html:133
+msgid "View Projects"
+msgstr "Смотреть проекты"
+
+#: portfolio/templates/portfolio/index.html:135
+msgid "Contact Me"
+msgstr "Связаться со мной"
+
+#: portfolio/templates/portfolio/index.html:168
+msgid "Technologies"
+msgstr "Технологии"
+
+#: portfolio/templates/portfolio/index.html:181
+msgid "About Me"
+msgstr "Обо мне"
+
+#: portfolio/templates/portfolio/index.html:182
+msgid ""
+"Crafting backends that <span class=\"accent\">power</span> great products"
+msgstr ""
+"Создаю бэкенды, которые <span class=\"accent\">оживляют</span> отличные "
+"продукты"
+
+#: portfolio/templates/portfolio/index.html:184
+msgid ""
+"I'm a Python Backend Developer based in Karshi, Uzbekistan, with over 2 "
+"years of experience building robust, scalable web applications. My focus is "
+"clean architecture, performance, and developer experience."
+msgstr ""
+"Я Python Backend-разработчик из Карши, Узбекистан, с более чем 2-летним "
+"опытом создания надёжных, масштабируемых веб-приложений. Мой фокус — "
+"чистая архитектура, производительность и удобство разработки."
+
+#: portfolio/templates/portfolio/index.html:191
+msgid ""
+"I specialize in Django ecosystems, with expertise in database optimization, "
+"containerization, and cloud deployments. I believe great backend work is "
+"invisible — it just works."
+msgstr ""
+"Я специализируюсь на экосистеме Django, обладаю экспертизой в оптимизации "
+"баз данных, контейнеризации и облачном развёртывании. Я считаю, что "
+"хорошая бэкенд-работа незаметна — она просто работает."
+
+#: portfolio/templates/portfolio/index.html:216
+msgid "Tech Stack"
+msgstr "Технологический стек"
+
+#: portfolio/templates/portfolio/index.html:217
+msgid "Skills & <span class=\"accent\">Technologies</span>"
+msgstr "Навыки и <span class=\"accent\">технологии</span>"
+
+#: portfolio/templates/portfolio/index.html:218
+msgid "The tools and technologies I use to bring ideas to life."
+msgstr "Инструменты и технологии, которые я использую, чтобы воплощать идеи в жизнь."
+
+#: portfolio/templates/portfolio/index.html:263
+msgid "Portfolio"
+msgstr "Портфолио"
+
+#: portfolio/templates/portfolio/index.html:264
+msgid "Selected <span class=\"accent\">Projects</span>"
+msgstr "Избранные <span class=\"accent\">проекты</span>"
+
+#: portfolio/templates/portfolio/index.html:265
+msgid "A curated collection of work I'm proud of."
+msgstr "Тщательно отобранная коллекция работ, которыми я горжусь."
+
+#: portfolio/templates/portfolio/index.html:270
+msgid "All"
+msgstr "Все"
+
+#: portfolio/templates/portfolio/index.html:286
+msgid "GitHub"
+msgstr "GitHub"
+
+#: portfolio/templates/portfolio/index.html:291
+msgid "Live Demo"
+msgstr "Демо"
+
+#: portfolio/templates/portfolio/index.html:318
+msgid "E-Commerce API Platform"
+msgstr "API-платформа для электронной коммерции"
+
+#: portfolio/templates/portfolio/index.html:319
+msgid ""
+"A high-performance RESTful API for a multi-vendor e-commerce platform with "
+"JWT auth and Stripe payments."
+msgstr ""
+"Высокопроизводительный RESTful API для многопродавцовой платформы "
+"электронной коммерции с JWT-аутентификацией и платежами через Stripe."
+
+#: portfolio/templates/portfolio/index.html:324
+msgid "Task Management System"
+msgstr "Система управления задачами"
+
+#: portfolio/templates/portfolio/index.html:325
+msgid ""
+"A project management tool with real-time collaboration, Celery background "
+"tasks, and WebSocket notifications."
+msgstr ""
+"Инструмент управления проектами с совместной работой в реальном времени, "
+"фоновыми задачами Celery и уведомлениями по WebSocket."
+
+#: portfolio/templates/portfolio/index.html:330
+msgid "Microservices Auth Gateway"
+msgstr "Шлюз аутентификации для микросервисов"
+
+#: portfolio/templates/portfolio/index.html:331
+msgid ""
+"An OAuth 2.0 & JWT authentication gateway for microservice architecture with "
+"SSO support."
+msgstr ""
+"Шлюз аутентификации OAuth 2.0 и JWT для микросервисной архитектуры с "
+"поддержкой единого входа (SSO)."
+
+#: portfolio/templates/portfolio/index.html:349
+msgid "Career"
+msgstr "Карьера"
+
+#: portfolio/templates/portfolio/index.html:350
+msgid "Work <span class=\"accent\">Experience</span>"
+msgstr "Опыт <span class=\"accent\">работы</span>"
+
+#: portfolio/templates/portfolio/index.html:352
+msgid ""
+"A track record of delivering real-world software solutions for businesses "
+"across multiple domains."
+msgstr ""
+"Подтверждённый опыт создания реальных программных решений для бизнеса в "
+"разных отраслях."
+
+#: portfolio/templates/portfolio/index.html:371
+msgid "Present"
+msgstr "Настоящее время"
+
+#: portfolio/templates/portfolio/index.html:373
+msgid "Current"
+msgstr "Текущее место"
+
+#: portfolio/templates/portfolio/index.html:388
+msgid "Experience details coming soon."
+msgstr "Информация об опыте появится скоро."
+
+#: portfolio/templates/portfolio/index.html:401
+msgid "Credentials"
+msgstr "Квалификации"
+
+#: portfolio/templates/portfolio/index.html:402
+msgid "My <span class=\"accent\">Certificates</span>"
+msgstr "Мои <span class=\"accent\">сертификаты</span>"
+
+#: portfolio/templates/portfolio/index.html:403
+msgid "Verified achievements and professional credentials."
+msgstr "Подтверждённые достижения и профессиональные квалификации."
+
+#: portfolio/templates/portfolio/index.html:412
+#: portfolio/templates/portfolio/index.html:427
+#: portfolio/templates/portfolio/index.html:447
+msgid "Verified"
+msgstr "Подтверждено"
+
+#: portfolio/templates/portfolio/index.html:420
+#: portfolio/templates/portfolio/index.html:452
+msgid "View Full"
+msgstr "Открыть полностью"
+
+#: portfolio/templates/portfolio/index.html:450
+msgid "IELTS Certificate"
+msgstr "Сертификат IELTS"
+
+#: portfolio/templates/portfolio/index.html:481
+msgid "Achievements"
+msgstr "Достижения"
+
+#: portfolio/templates/portfolio/index.html:482
+msgid "Hackathons & <span class=\"accent\">Competitions</span>"
+msgstr "Хакатоны и <span class=\"accent\">соревнования</span>"
+
+#: portfolio/templates/portfolio/index.html:483
+msgid "Events I've competed in and what I built under pressure."
+msgstr "Мероприятия, в которых я участвовал, и то, что я создавал в условиях жёстких сроков."
+
+#: portfolio/templates/portfolio/index.html:515
+msgid "View Project"
+msgstr "Смотреть проект"
+
+#: portfolio/templates/portfolio/index.html:522
+msgid "Hackathon & competition details coming soon."
+msgstr "Информация о хакатонах и соревнованиях появится скоро."
+
+#: portfolio/templates/portfolio/index.html:533
+msgid "Communication"
+msgstr "Коммуникация"
+
+#: portfolio/templates/portfolio/index.html:534
+msgid "Language <span class=\"accent\">Proficiency</span>"
+msgstr "Уровень владения <span class=\"accent\">языками</span>"
+
+#: portfolio/templates/portfolio/index.html:535
+msgid "Languages I speak and their proficiency levels."
+msgstr "Языки, на которых я говорю, и уровень владения ими."
+
+#: portfolio/templates/portfolio/index.html:543
+msgid "Uzbek"
+msgstr "Узбекский"
+
+#: portfolio/templates/portfolio/index.html:544
+msgid "Native"
+msgstr "Родной"
+
+#: portfolio/templates/portfolio/index.html:547
+msgid "Native or Bilingual Proficiency"
+msgstr "Уровень носителя языка"
+
+#: portfolio/templates/portfolio/index.html:560
+msgid "English"
+msgstr "Английский"
+
+#: portfolio/templates/portfolio/index.html:564
+msgid "Professional Working Proficiency"
+msgstr "Профессиональный рабочий уровень"
+
+#: portfolio/templates/portfolio/index.html:577
+msgid "Russian"
+msgstr "Русский"
+
+#: portfolio/templates/portfolio/index.html:578
+msgid "Learning"
+msgstr "Учу"
+
+#: portfolio/templates/portfolio/index.html:581
+msgid "Elementary Proficiency"
+msgstr "Начальный уровень"
+
+#: portfolio/templates/portfolio/index.html:597
+msgid "Get In Touch"
+msgstr "Связаться"
+
+#: portfolio/templates/portfolio/index.html:598
+msgid "Let's <span class=\"accent\">Work Together</span>"
+msgstr "Давайте <span class=\"accent\">работать вместе</span>"
+
+#: portfolio/templates/portfolio/index.html:599
+msgid "Have a project in mind? I'd love to hear about it."
+msgstr "Есть идея проекта? Буду рад узнать о ней."
+
+#: portfolio/templates/portfolio/index.html:608
+msgid "Email"
+msgstr "Эл. почта"
+
+#: portfolio/templates/portfolio/index.html:615
+msgid "Location"
+msgstr "Местоположение"
+
+#: portfolio/templates/portfolio/index.html:616
+msgid "Karshi, Uzbekistan"
+msgstr "Карши, Узбекистан"
+
+#: portfolio/templates/portfolio/index.html:622
+msgid "Availability"
+msgstr "Доступность"
+
+#: portfolio/templates/portfolio/index.html:623
+msgid "Open to offers"
+msgstr "Открыт для предложений"
+
+#: portfolio/templates/portfolio/index.html:653
+msgid "Message sent! I'll get back to you soon."
+msgstr "Сообщение отправлено! Я скоро свяжусь с вами."
+
+#: portfolio/templates/portfolio/index.html:660
+msgid "Full Name"
+msgstr "Полное имя"
+
+#: portfolio/templates/portfolio/index.html:665
+msgid "Email Address"
+msgstr "Адрес эл. почты"
+
+#: portfolio/templates/portfolio/index.html:670
+msgid "Subject"
+msgstr "Тема"
+
+#: portfolio/templates/portfolio/index.html:672
+msgid "Project Collaboration"
+msgstr "Сотрудничество по проекту"
+
+#: portfolio/templates/portfolio/index.html:675
+msgid "Message"
+msgstr "Сообщение"
+
+#: portfolio/templates/portfolio/index.html:677
+msgid "Tell me about your project..."
+msgstr "Расскажите о вашем проекте..."
+
+#: portfolio/templates/portfolio/index.html:681
+msgid "Send Message"
+msgstr "Отправить сообщение"
+
+#: portfolio/templates/portfolio/index.html:682
+msgid "Sending..."
+msgstr "Отправка..."
+
+#: portfolio/templates/portfolio/index.html:699
+msgid "Building the backend that powers your product."
+msgstr "Создаю бэкенд, который приводит в действие ваш продукт."
+
+#: portfolio/templates/portfolio/index.html:716
+msgid "All rights reserved."
+msgstr "Все права защищены."
+
+#: portfolio/templates/portfolio/index.html:717
+msgid ""
+"Crafted with <i class=\"bi bi-heart-fill\" style=\"color:#ef4444\"></i> "
+"using Django"
+msgstr ""
+"Создано с <i class=\"bi bi-heart-fill\" style=\"color:#ef4444\"></i> на "
+"Django"
+
+#: portfolio/views.py:33
+msgid "Message sent successfully!"
+msgstr "Сообщение успешно отправлено!"
+
+#: portfolio/views.py:34
+msgid "Your message has been sent successfully!"
+msgstr "Ваше сообщение успешно отправлено!"
+
+#: portfolio/views.py:38
+msgid "Please fill in all fields."
+msgstr "Пожалуйста, заполните все поля."
+
+#: portfolio/views.py:39
+msgid "Please fill in all required fields."
+msgstr "Пожалуйста, заполните все обязательные поля."
+
+#: portfolio/views.py:87
+msgid "Django & FastAPI Expert"
+msgstr "Эксперт по Django и FastAPI"
+
+#: portfolio/views.py:88
+msgid "Cloud-Native Architect"
+msgstr "Cloud-Native архитектор"
+
+#: portfolio/views.py:89
+msgid "API Design Specialist"
+msgstr "Специалист по проектированию API"
+
+#: portfolio/views.py:106
+msgid "Network error. Please try again."
+msgstr "Ошибка сети. Пожалуйста, попробуйте снова."
+
+#: portfolio/views.py:107
+msgid "Something went wrong."
+msgstr "Что-то пошло не так."

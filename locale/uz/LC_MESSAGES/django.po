@@ -1,0 +1,495 @@
+# Uzbek (Latin) translations for the Oxunjon Abdullayev portfolio site.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-03 14:23+0500\n"
+"PO-Revision-Date: 2026-09-03 14:23+0500\n"
+"Last-Translator: \n"
+"Language-Team: Uzbek\n"
+"Language: uz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: portfolio/models.py:7 portfolio/templates/portfolio/index.html:245
+msgid "Backend"
+msgstr "Backend"
+
+#: portfolio/models.py:8
+msgid "Frontend"
+msgstr "Frontend"
+
+#: portfolio/models.py:9
+msgid "Database"
+msgstr "Ma'lumotlar bazasi"
+
+#: portfolio/models.py:10
+msgid "DevOps & Infrastructure"
+msgstr "DevOps va infratuzilma"
+
+#: portfolio/models.py:11
+msgid "Tools & Workflow"
+msgstr "Vositalar va ish jarayoni"
+
+#: portfolio/models.py:12
+msgid "Other"
+msgstr "Boshqa"
+
+#: portfolio/templates/portfolio/index.html:8
+#: portfolio/templates/portfolio/index.html:23
+#: portfolio/templates/portfolio/index.html:31 portfolio/views.py:86
+msgid "Python Backend Developer"
+msgstr "Python Backend dasturchisi"
+
+#: portfolio/templates/portfolio/index.html:9
+#: portfolio/templates/portfolio/index.html:24
+msgid ""
+"Python Backend Developer specializing in Django, FastAPI, and cloud-native "
+"solutions. Based in Karshi, Uzbekistan."
+msgstr ""
+"Django, FastAPI va cloud-native yechimlar bo'yicha ixtisoslashgan Python "
+"Backend dasturchisi. Qarshi, O'zbekistonda yashayman."
+
+#: portfolio/templates/portfolio/index.html:32
+msgid ""
+"Python Backend Developer specializing in Django, FastAPI, and cloud-native "
+"solutions."
+msgstr ""
+"Django, FastAPI va cloud-native yechimlar bo'yicha ixtisoslashgan Python "
+"Backend dasturchisi."
+
+#: portfolio/templates/portfolio/index.html:62
+#: portfolio/templates/portfolio/index.html:95
+#: portfolio/templates/portfolio/index.html:702
+msgid "About"
+msgstr "Men haqimda"
+
+#: portfolio/templates/portfolio/index.html:63
+#: portfolio/templates/portfolio/index.html:96
+#: portfolio/templates/portfolio/index.html:703
+msgid "Skills"
+msgstr "Ko'nikmalar"
+
+#: portfolio/templates/portfolio/index.html:64
+#: portfolio/templates/portfolio/index.html:97
+#: portfolio/templates/portfolio/index.html:163
+#: portfolio/templates/portfolio/index.html:704
+msgid "Projects"
+msgstr "Loyihalar"
+
+#: portfolio/templates/portfolio/index.html:65
+#: portfolio/templates/portfolio/index.html:98
+#: portfolio/templates/portfolio/index.html:158
+#: portfolio/templates/portfolio/index.html:705
+msgid "Experience"
+msgstr "Tajriba"
+
+#: portfolio/templates/portfolio/index.html:66
+#: portfolio/templates/portfolio/index.html:99
+msgid "Certificates"
+msgstr "Sertifikatlar"
+
+#: portfolio/templates/portfolio/index.html:67
+#: portfolio/templates/portfolio/index.html:100
+msgid "Hackathons"
+msgstr "Xakatonlar"
+
+#: portfolio/templates/portfolio/index.html:68
+#: portfolio/templates/portfolio/index.html:101
+#: portfolio/templates/portfolio/index.html:706
+msgid "Languages"
+msgstr "Tillar"
+
+#: portfolio/templates/portfolio/index.html:69
+#: portfolio/templates/portfolio/index.html:102
+#: portfolio/templates/portfolio/index.html:707
+msgid "Contact"
+msgstr "Aloqa"
+
+#: portfolio/templates/portfolio/index.html:73
+msgid "Change language"
+msgstr "Tilni o'zgartirish"
+
+#: portfolio/templates/portfolio/index.html:82
+msgid "Toggle theme"
+msgstr "Mavzuni almashtirish"
+
+#: portfolio/templates/portfolio/index.html:85
+msgid "Hire Me"
+msgstr "Meni yollang"
+
+#: portfolio/templates/portfolio/index.html:86
+msgid "Menu"
+msgstr "Menyu"
+
+#: portfolio/templates/portfolio/index.html:119
+msgid "Available for opportunities"
+msgstr "Takliflarga ochiqman"
+
+#: portfolio/templates/portfolio/index.html:126
+msgid ""
+"I architect scalable, high-performance backend systems using Django and "
+"cloud-native technologies. Passionate about clean code, RESTful APIs, and "
+"solutions that last."
+msgstr ""
+"Django va cloud-native texnologiyalar yordamida masshtablanuvchi, yuqori "
+"unumdorlikka ega backend tizimlarni loyihalayman. Toza kod, RESTful API va "
+"uzoq umr ko'radigan yechimlarga qiziqaman."
+
+#: portfolio/templates/portfolio/index.html:133
+msgid "View Projects"
+msgstr "Loyihalarni ko'rish"
+
+#: portfolio/templates/portfolio/index.html:135
+msgid "Contact Me"
+msgstr "Men bilan bog'lanish"
+
+#: portfolio/templates/portfolio/index.html:168
+msgid "Technologies"
+msgstr "Texnologiyalar"
+
+#: portfolio/templates/portfolio/index.html:181
+msgid "About Me"
+msgstr "Men haqimda"
+
+#: portfolio/templates/portfolio/index.html:182
+msgid ""
+"Crafting backends that <span class=\"accent\">power</span> great products"
+msgstr ""
+"Ajoyib mahsulotlarni <span class=\"accent\">jonlantiradigan</span> "
+"backend'lar yarataman"
+
+#: portfolio/templates/portfolio/index.html:184
+msgid ""
+"I'm a Python Backend Developer based in Karshi, Uzbekistan, with over 2 "
+"years of experience building robust, scalable web applications. My focus is "
+"clean architecture, performance, and developer experience."
+msgstr ""
+"Men Qarshi, O'zbekistondan bo'lgan Python Backend dasturchisiman, ishonchli "
+"va masshtablanuvchi veb-ilovalar yaratishda 2 yildan ortiq tajribaga "
+"egaman. Mening e'tiborim toza arxitektura, unumdorlik va dasturchi "
+"tajribasiga qaratilgan."
+
+#: portfolio/templates/portfolio/index.html:191
+msgid ""
+"I specialize in Django ecosystems, with expertise in database optimization, "
+"containerization, and cloud deployments. I believe great backend work is "
+"invisible — it just works."
+msgstr ""
+"Men Django ekotizimiga ixtisoslashganman, ma'lumotlar bazasini "
+"optimallashtirish, konteynerlashtirish va bulutli joylashtirish bo'yicha "
+"tajribaga egaman. Yaxshi backend ishi ko'zga tashlanmaydi, deb "
+"hisoblayman — u shunchaki ishlayveradi."
+
+#: portfolio/templates/portfolio/index.html:216
+msgid "Tech Stack"
+msgstr "Texnologik stek"
+
+#: portfolio/templates/portfolio/index.html:217
+msgid "Skills & <span class=\"accent\">Technologies</span>"
+msgstr "Ko'nikmalar va <span class=\"accent\">texnologiyalar</span>"
+
+#: portfolio/templates/portfolio/index.html:218
+msgid "The tools and technologies I use to bring ideas to life."
+msgstr "G'oyalarni hayotga tatbiq etish uchun foydalanadigan vositalar va texnologiyalar."
+
+#: portfolio/templates/portfolio/index.html:263
+msgid "Portfolio"
+msgstr "Portfolio"
+
+#: portfolio/templates/portfolio/index.html:264
+msgid "Selected <span class=\"accent\">Projects</span>"
+msgstr "Tanlangan <span class=\"accent\">loyihalar</span>"
+
+#: portfolio/templates/portfolio/index.html:265
+msgid "A curated collection of work I'm proud of."
+msgstr "O'zim faxrlanadigan ishlarimning saralangan to'plami."
+
+#: portfolio/templates/portfolio/index.html:270
+msgid "All"
+msgstr "Barchasi"
+
+#: portfolio/templates/portfolio/index.html:286
+msgid "GitHub"
+msgstr "GitHub"
+
+#: portfolio/templates/portfolio/index.html:291
+msgid "Live Demo"
+msgstr "Jonli namoyish"
+
+#: portfolio/templates/portfolio/index.html:318
+msgid "E-Commerce API Platform"
+msgstr "Elektron tijorat uchun API platforma"
+
+#: portfolio/templates/portfolio/index.html:319
+msgid ""
+"A high-performance RESTful API for a multi-vendor e-commerce platform with "
+"JWT auth and Stripe payments."
+msgstr ""
+"JWT autentifikatsiyasi va Stripe to'lovlari bilan ko'p sotuvchili elektron "
+"tijorat platformasi uchun yuqori unumdor RESTful API."
+
+#: portfolio/templates/portfolio/index.html:324
+msgid "Task Management System"
+msgstr "Vazifalarni boshqarish tizimi"
+
+#: portfolio/templates/portfolio/index.html:325
+msgid ""
+"A project management tool with real-time collaboration, Celery background "
+"tasks, and WebSocket notifications."
+msgstr ""
+"Real vaqt rejimida hamkorlik, Celery fon vazifalari va WebSocket "
+"bildirishnomalariga ega loyiha boshqaruv vositasi."
+
+#: portfolio/templates/portfolio/index.html:330
+msgid "Microservices Auth Gateway"
+msgstr "Mikroservislar uchun autentifikatsiya shlyuzi"
+
+#: portfolio/templates/portfolio/index.html:331
+msgid ""
+"An OAuth 2.0 & JWT authentication gateway for microservice architecture with "
+"SSO support."
+msgstr ""
+"SSO qo'llab-quvvatlovchi mikroservis arxitekturasi uchun OAuth 2.0 va JWT "
+"autentifikatsiya shlyuzi."
+
+#: portfolio/templates/portfolio/index.html:349
+msgid "Career"
+msgstr "Karyera"
+
+#: portfolio/templates/portfolio/index.html:350
+msgid "Work <span class=\"accent\">Experience</span>"
+msgstr "Ish <span class=\"accent\">tajribasi</span>"
+
+#: portfolio/templates/portfolio/index.html:352
+msgid ""
+"A track record of delivering real-world software solutions for businesses "
+"across multiple domains."
+msgstr ""
+"Turli sohalardagi bizneslar uchun real dasturiy yechimlarni yetkazib "
+"berish bo'yicha isbotlangan tajriba."
+
+#: portfolio/templates/portfolio/index.html:371
+msgid "Present"
+msgstr "Hozirgi vaqt"
+
+#: portfolio/templates/portfolio/index.html:373
+msgid "Current"
+msgstr "Joriy"
+
+#: portfolio/templates/portfolio/index.html:388
+msgid "Experience details coming soon."
+msgstr "Tajriba haqida ma'lumot tez orada qo'shiladi."
+
+#: portfolio/templates/portfolio/index.html:401
+msgid "Credentials"
+msgstr "Malaka hujjatlari"
+
+#: portfolio/templates/portfolio/index.html:402
+msgid "My <span class=\"accent\">Certificates</span>"
+msgstr "Mening <span class=\"accent\">sertifikatlarim</span>"
+
+#: portfolio/templates/portfolio/index.html:403
+msgid "Verified achievements and professional credentials."
+msgstr "Tasdiqlangan yutuqlar va professional malaka hujjatlari."
+
+#: portfolio/templates/portfolio/index.html:412
+#: portfolio/templates/portfolio/index.html:427
+#: portfolio/templates/portfolio/index.html:447
+msgid "Verified"
+msgstr "Tasdiqlangan"
+
+#: portfolio/templates/portfolio/index.html:420
+#: portfolio/templates/portfolio/index.html:452
+msgid "View Full"
+msgstr "To'liq ko'rish"
+
+#: portfolio/templates/portfolio/index.html:450
+msgid "IELTS Certificate"
+msgstr "IELTS sertifikati"
+
+#: portfolio/templates/portfolio/index.html:481
+msgid "Achievements"
+msgstr "Yutuqlar"
+
+#: portfolio/templates/portfolio/index.html:482
+msgid "Hackathons & <span class=\"accent\">Competitions</span>"
+msgstr "Xakatonlar va <span class=\"accent\">musobaqalar</span>"
+
+#: portfolio/templates/portfolio/index.html:483
+msgid "Events I've competed in and what I built under pressure."
+msgstr "Ishtirok etgan tadbirlarim va vaqt bosimi ostida yaratgan loyihalarim."
+
+#: portfolio/templates/portfolio/index.html:515
+msgid "View Project"
+msgstr "Loyihani ko'rish"
+
+#: portfolio/templates/portfolio/index.html:522
+msgid "Hackathon & competition details coming soon."
+msgstr "Xakaton va musobaqalar haqida ma'lumot tez orada qo'shiladi."
+
+#: portfolio/templates/portfolio/index.html:533
+msgid "Communication"
+msgstr "Muloqot"
+
+#: portfolio/templates/portfolio/index.html:534
+msgid "Language <span class=\"accent\">Proficiency</span>"
+msgstr "Til bilish <span class=\"accent\">darajasi</span>"
+
+#: portfolio/templates/portfolio/index.html:535
+msgid "Languages I speak and their proficiency levels."
+msgstr "Men bilgan tillar va ularni bilish darajam."
+
+#: portfolio/templates/portfolio/index.html:543
+msgid "Uzbek"
+msgstr "O'zbekcha"
+
+#: portfolio/templates/portfolio/index.html:544
+msgid "Native"
+msgstr "Ona tili"
+
+#: portfolio/templates/portfolio/index.html:547
+msgid "Native or Bilingual Proficiency"
+msgstr "Ona tili darajasida"
+
+#: portfolio/templates/portfolio/index.html:560
+msgid "English"
+msgstr "Inglizcha"
+
+#: portfolio/templates/portfolio/index.html:564
+msgid "Professional Working Proficiency"
+msgstr "Professional ish darajasida"
+
+#: portfolio/templates/portfolio/index.html:577
+msgid "Russian"
+msgstr "Ruscha"
+
+#: portfolio/templates/portfolio/index.html:578
+msgid "Learning"
+msgstr "O'rganyapman"
+
+#: portfolio/templates/portfolio/index.html:581
+msgid "Elementary Proficiency"
+msgstr "Boshlang'ich daraja"
+
+#: portfolio/templates/portfolio/index.html:597
+msgid "Get In Touch"
+msgstr "Bog'lanish"
+
+#: portfolio/templates/portfolio/index.html:598
+msgid "Let's <span class=\"accent\">Work Together</span>"
+msgstr "Keling, <span class=\"accent\">birga ishlaylik</span>"
+
+#: portfolio/templates/portfolio/index.html:599
+msgid "Have a project in mind? I'd love to hear about it."
+msgstr "Loyiha g'oyangiz bormi? Uni eshitishdan mamnun bo'laman."
+
+#: portfolio/templates/portfolio/index.html:608
+msgid "Email"
+msgstr "Email"
+
+#: portfolio/templates/portfolio/index.html:615
+msgid "Location"
+msgstr "Manzil"
+
+#: portfolio/templates/portfolio/index.html:616
+msgid "Karshi, Uzbekistan"
+msgstr "Qarshi, O'zbekiston"
+
+#: portfolio/templates/portfolio/index.html:622
+msgid "Availability"
+msgstr "Mavjudlik"
+
+#: portfolio/templates/portfolio/index.html:623
+msgid "Open to offers"
+msgstr "Takliflarga ochiqman"
+
+#: portfolio/templates/portfolio/index.html:653
+msgid "Message sent! I'll get back to you soon."
+msgstr "Xabar yuborildi! Tez orada siz bilan bog'lanaman."
+
+#: portfolio/templates/portfolio/index.html:660
+msgid "Full Name"
+msgstr "To'liq ism"
+
+#: portfolio/templates/portfolio/index.html:665
+msgid "Email Address"
+msgstr "Email manzil"
+
+#: portfolio/templates/portfolio/index.html:670
+msgid "Subject"
+msgstr "Mavzu"
+
+#: portfolio/templates/portfolio/index.html:672
+msgid "Project Collaboration"
+msgstr "Loyiha bo'yicha hamkorlik"
+
+#: portfolio/templates/portfolio/index.html:675
+msgid "Message"
+msgstr "Xabar"
+
+#: portfolio/templates/portfolio/index.html:677
+msgid "Tell me about your project..."
+msgstr "Loyihangiz haqida gapirib bering..."
+
+#: portfolio/templates/portfolio/index.html:681
+msgid "Send Message"
+msgstr "Xabarni yuborish"
+
+#: portfolio/templates/portfolio/index.html:682
+msgid "Sending..."
+msgstr "Yuborilmoqda..."
+
+#: portfolio/templates/portfolio/index.html:699
+msgid "Building the backend that powers your product."
+msgstr "Mahsulotingizni ishga soluvchi backend yarataman."
+
+#: portfolio/templates/portfolio/index.html:716
+msgid "All rights reserved."
+msgstr "Barcha huquqlar himoyalangan."
+
+#: portfolio/templates/portfolio/index.html:717
+msgid ""
+"Crafted with <i class=\"bi bi-heart-fill\" style=\"color:#ef4444\"></i> "
+"using Django"
+msgstr ""
+"Django yordamida <i class=\"bi bi-heart-fill\" style=\"color:#ef4444\"></i> "
+"bilan yaratilgan"
+
+#: portfolio/views.py:33
+msgid "Message sent successfully!"
+msgstr "Xabar muvaffaqiyatli yuborildi!"
+
+#: portfolio/views.py:34
+msgid "Your message has been sent successfully!"
+msgstr "Xabaringiz muvaffaqiyatli yuborildi!"
+
+#: portfolio/views.py:38
+msgid "Please fill in all fields."
+msgstr "Iltimos, barcha maydonlarni to'ldiring."
+
+#: portfolio/views.py:39
+msgid "Please fill in all required fields."
+msgstr "Iltimos, barcha majburiy maydonlarni to'ldiring."
+
+#: portfolio/views.py:87
+msgid "Django & FastAPI Expert"
+msgstr "Django va FastAPI bo'yicha ekspert"
+
+#: portfolio/views.py:88
+msgid "Cloud-Native Architect"
+msgstr "Cloud-Native arxitektor"
+
+#: portfolio/views.py:89
+msgid "API Design Specialist"
+msgstr "API dizayni bo'yicha mutaxassis"
+
+#: portfolio/views.py:106
+msgid "Network error. Please try again."
+msgstr "Tarmoq xatosi. Iltimos, qayta urinib ko'ring."
+
+#: portfolio/views.py:107
+msgid "Something went wrong."
+msgstr "Nimadir xato ketdi."

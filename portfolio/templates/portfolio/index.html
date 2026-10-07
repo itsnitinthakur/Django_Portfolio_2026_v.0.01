@@ -1,0 +1,750 @@
+{% load static i18n %}
+{% get_current_language as CURRENT_LANGUAGE %}
+<!DOCTYPE html>
+<html lang="{{ CURRENT_LANGUAGE }}" data-theme="dark">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Oxunjon Abdullayev — {% trans "Python Backend Developer" %}</title>
+    <meta name="description" content="{% blocktrans %}Python Backend Developer specializing in Django, FastAPI, and cloud-native solutions. Based in Karshi, Uzbekistan.{% endblocktrans %}"/>
+    <meta name="author" content="Oxunjon Abdullayev"/>
+    <meta name="keywords" content="Oxunjon Abdullayev, Python Backend Developer, Django Developer, FastAPI, REST API, DRF, PostgreSQL, Docker, Uzbekistan, Karshi, backend developer portfolio"/>
+    <meta name="robots" content="index, follow"/>
+    <link rel="canonical" href="{{ site_url }}{{ request.path }}"/>
+    {% language 'en' %}<link rel="alternate" hreflang="en" href="{{ site_url }}{% url 'index' %}"/>{% endlanguage %}
+    {% language 'ru' %}<link rel="alternate" hreflang="ru" href="{{ site_url }}{% url 'index' %}"/>{% endlanguage %}
+    {% language 'uz' %}<link rel="alternate" hreflang="uz" href="{{ site_url }}{% url 'index' %}"/>{% endlanguage %}
+    <link rel="alternate" hreflang="x-default" href="{{ site_url }}/"/>
+    <meta name="google-site-verification" content="Fs62Gc0FHyan_didryrPPas2ol7XScy4MbXtOj-T9n0" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="{{ site_url }}{{ request.path }}"/>
+    <meta property="og:title" content="Oxunjon Abdullayev — {% trans "Python Backend Developer" %}"/>
+    <meta property="og:description" content="{% blocktrans %}Python Backend Developer specializing in Django, FastAPI, and cloud-native solutions. Based in Karshi, Uzbekistan.{% endblocktrans %}"/>
+    <meta property="og:image" content="{{ site_url }}{% static 'images/oxun.jpg' %}"/>
+    <meta property="og:site_name" content="Oxunjon Abdullayev"/>
+    <meta property="og:locale" content="{% if CURRENT_LANGUAGE == 'ru' %}ru_RU{% elif CURRENT_LANGUAGE == 'uz' %}uz_UZ{% else %}en_US{% endif %}"/>
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Oxunjon Abdullayev — {% trans "Python Backend Developer" %}"/>
+    <meta name="twitter:description" content="{% trans "Python Backend Developer specializing in Django, FastAPI, and cloud-native solutions." %}"/>
+    <meta name="twitter:image" content="{{ site_url }}{% static 'images/oxun.jpg' %}"/>
+
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#6366f1"/>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
+    <link rel="icon" type="image/svg+xml" href="{% static 'images/favicon.svg' %}">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="mainNav">
+    <div class="container nav-container">
+        <a class="nav-brand" href="#">
+            <span class="brand-accent"></span>OA
+        </a>
+        <div class="nav-links" id="navLinks">
+            <a class="nav-link" href="#about">{% trans "About" %}</a>
+            <a class="nav-link" href="#skills">{% trans "Skills" %}</a>
+            <a class="nav-link" href="#projects">{% trans "Projects" %}</a>
+            <a class="nav-link" href="#experience">{% trans "Experience" %}</a>
+            <a class="nav-link" href="#certificates">{% trans "Certificates" %}</a>
+            <a class="nav-link" href="#hackathons">{% trans "Hackathons" %}</a>
+            <a class="nav-link" href="#languages">{% trans "Languages" %}</a>
+            <a class="nav-link" href="#contact">{% trans "Contact" %}</a>
+        </div>
+        <div class="nav-actions">
+            <div class="lang-switcher" id="langSwitcher">
+                <button class="lang-switch-btn" id="langSwitchBtn" aria-label="{% trans 'Change language' %}" aria-haspopup="true" aria-expanded="false">
+                    <i class="bi bi-globe2"></i><span class="lang-switch-code">{{ CURRENT_LANGUAGE|upper }}</span>
+                </button>
+                <div class="lang-switch-menu" id="langSwitchMenu">
+                    {% language 'en' %}<a href="{% url 'index' %}" class="lang-switch-item{% if CURRENT_LANGUAGE == 'en' %} active{% endif %}">English</a>{% endlanguage %}
+                    {% language 'ru' %}<a href="{% url 'index' %}" class="lang-switch-item{% if CURRENT_LANGUAGE == 'ru' %} active{% endif %}">Русский</a>{% endlanguage %}
+                    {% language 'uz' %}<a href="{% url 'index' %}" class="lang-switch-item{% if CURRENT_LANGUAGE == 'uz' %} active{% endif %}">O'zbekcha</a>{% endlanguage %}
+                </div>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="{% trans 'Toggle theme' %}">
+                <i class="bi bi-sun-fill" id="themeIcon"></i>
+            </button>
+            <a class="nav-cta" href="#contact">{% trans "Hire Me" %}</a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="{% trans 'Menu' %}">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">{% trans "About" %}</a>
+    <a href="#skills" class="mobile-link">{% trans "Skills" %}</a>
+    <a href="#projects" class="mobile-link">{% trans "Projects" %}</a>
+    <a href="#experience" class="mobile-link">{% trans "Experience" %}</a>
+    <a href="#certificates" class="mobile-link">{% trans "Certificates" %}</a>
+    <a href="#hackathons" class="mobile-link">{% trans "Hackathons" %}</a>
+    <a href="#languages" class="mobile-link">{% trans "Languages" %}</a>
+    <a href="#contact" class="mobile-link">{% trans "Contact" %}</a>
+    <div class="mobile-lang-switcher">
+        {% language 'en' %}<a href="{% url 'index' %}" class="mobile-lang-item{% if CURRENT_LANGUAGE == 'en' %} active{% endif %}">EN</a>{% endlanguage %}
+        {% language 'ru' %}<a href="{% url 'index' %}" class="mobile-lang-item{% if CURRENT_LANGUAGE == 'ru' %} active{% endif %}">RU</a>{% endlanguage %}
+        {% language 'uz' %}<a href="{% url 'index' %}" class="mobile-lang-item{% if CURRENT_LANGUAGE == 'uz' %} active{% endif %}">UZ</a>{% endlanguage %}
+    </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-grid-bg"></div>
+
+    <div class="container hero-inner">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="800">
+            <div class="hero-badge">
+                <span class="pulse-dot"></span> {% trans "Available for opportunities" %}
+            </div>
+            <h1 class="hero-name">
+                Oxunjon<br><span class="hero-name-accent">Abdullayev</span>
+            </h1>
+            <p class="hero-role" id="heroRole">{{ hero_titles.0 }}</p>
+            <p class="hero-desc">
+                {% blocktrans trimmed %}
+                I architect scalable, high-performance backend systems using Django and cloud-native technologies.
+                Passionate about clean code, RESTful APIs, and solutions that last.
+                {% endblocktrans %}
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">
+                    {% trans "View Projects" %} <i class="bi bi-arrow-down-right"></i>
+                </a>
+                <a href="#contact" class="btn-ghost">{% trans "Contact Me" %}</a>
+            </div>
+        </div>
+
+        <div class="hero-visual" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <div class="hero-avatar-wrap">
+                <div class="avatar-ring"></div>
+                <div class="avatar-ring ring-outer"></div>
+                <div class="hero-avatar">
+                    <img src="{% static 'images/oxun.jpg' %}" alt="Oxunjon Abdullayev">
+                </div>
+                <div class="float-tag tag-1"><i class="bi bi-server"></i> Django</div>
+                <div class="float-tag tag-2"><i class="bi bi-box"></i> Docker</div>
+                <div class="float-tag tag-3"><i class="bi bi-filetype-py"></i> Python</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat">
+                    <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+                    <span class="stat-text">{% trans "Experience" %}</span>
+                </div>
+                <div class="stat-sep"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+                    <span class="stat-text">{% trans "Projects" %}</span>
+                </div>
+                <div class="stat-sep"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="20">0</span><span class="stat-plus">+</span>
+                    <span class="stat-text">{% trans "Technologies" %}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-text" data-aos="fade-right">
+                <div class="section-tag">{% trans "About Me" %}</div>
+                <h2 class="section-title">{% blocktrans %}Crafting backends that <span class="accent">power</span> great products{% endblocktrans %}</h2>
+                <p class="section-desc">
+                    {% blocktrans trimmed %}
+                    I'm a Python Backend Developer based in Karshi, Uzbekistan, with over 2 years of experience
+                    building robust, scalable web applications. My focus is clean architecture, performance, and
+                    developer experience.
+                    {% endblocktrans %}
+                </p>
+                <p class="section-desc">
+                    {% blocktrans trimmed %}
+                    I specialize in Django ecosystems, with expertise in database optimization,
+                    containerization, and cloud deployments. I believe great backend work is invisible — it just works.
+                    {% endblocktrans %}
+                </p>
+                <div class="about-socials">
+                    <a href="https://github.com/oxunjonabdulla" target="_blank" class="social-pill">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/oxunjonabdullayev/" target="_blank" class="social-pill">
+                        <i class="bi bi-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="mailto:oxundev@gmail.com" class="social-pill">
+                        <i class="bi bi-envelope-fill"></i> Gmail
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section section-alt" id="skills">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <div class="section-tag center">{% trans "Tech Stack" %}</div>
+            <h2 class="section-title center">{% blocktrans %}Skills & <span class="accent">Technologies</span>{% endblocktrans %}</h2>
+            <p class="section-subtitle">{% blocktrans trimmed %}The tools and technologies I use to bring ideas to life.{% endblocktrans %}</p>
+        </div>
+
+        <div class="skills-grid">
+            {% for group in skills_grouped %}
+            <div class="skill-category-card" data-aos="fade-up" data-aos-delay="{{ forloop.counter0 }}50">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon">
+                        <i class="bi {{ group.icon }}"></i>
+                    </div>
+                    <h3 class="skill-cat-name">{{ group.name }}</h3>
+                    <span class="skill-count">{{ group.count }}</span>
+                </div>
+                <div class="skill-chips">
+                    {% for skill in group.skills %}
+                    <div class="skill-chip" data-aos="zoom-in" data-aos-delay="{{ forloop.counter0 }}30">
+                        <i class="bi {{ skill.icon }}"></i>
+                        <span>{{ skill.name }}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% empty %}
+            <!-- Fallback if no skills in DB -->
+            <div class="skill-category-card" data-aos="fade-up">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon"><i class="bi bi-server"></i></div>
+                    <h3 class="skill-cat-name">{% trans "Backend" %}</h3>
+                </div>
+                <div class="skill-chips">
+                    <div class="skill-chip"><i class="bi bi-filetype-py"></i><span>Python</span></div>
+                    <div class="skill-chip"><i class="bi bi-server"></i><span>Django</span></div>
+                    <div class="skill-chip"><i class="bi bi-lightning-charge"></i><span>FastAPI</span></div>
+                    <div class="skill-chip"><i class="bi bi-braces"></i><span>DRF</span></div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <div class="section-tag center">{% trans "Portfolio" %}</div>
+            <h2 class="section-title center">{% blocktrans %}Selected <span class="accent">Projects</span>{% endblocktrans %}</h2>
+            <p class="section-subtitle">{% blocktrans trimmed %}A curated collection of work I'm proud of.{% endblocktrans %}</p>
+        </div>
+
+        {% if all_tech %}
+        <div class="filter-bar" data-aos="fade-up" data-aos-delay="100">
+            <button class="filter-btn active" data-filter="all">{% trans "All" %}</button>
+            {% for tech in all_tech %}
+            <button class="filter-btn" data-filter="{{ tech }}">{{ tech|title }}</button>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="projects-grid" id="projectsGrid">
+            {% for project in projects %}
+            <div class="project-card-wrap" data-tech="{{ project.tech_stack|join:',' }}"
+                 data-aos="fade-up" data-aos-delay="{{ forloop.counter0|add:1 }}00">
+                <div class="project-card">
+                    <div class="project-top">
+                        <div class="project-icon"><i class="bi bi-code-slash"></i></div>
+                        <div class="project-links">
+                            {% if project.github_url %}
+                            <a href="{{ project.github_url }}" target="_blank" class="proj-link" title="{% trans 'GitHub' %}">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            {% endif %}
+                            {% if project.live_url %}
+                            <a href="{{ project.live_url }}" target="_blank" class="proj-link" title="{% trans 'Live Demo' %}">
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <h3 class="project-name">{{ project.title }}</h3>
+                    <p class="project-desc">{{ project.description }}</p>
+                    <div class="project-tags">
+                        {% for tech in project.tech_stack %}
+                        <span class="tag">{{ tech }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            {% for i in "123" %}
+            <div class="project-card-wrap" data-tech="django,python" data-aos="fade-up"
+                 data-aos-delay="{{ forloop.counter }}00">
+                <div class="project-card">
+                    <div class="project-top">
+                        <div class="project-icon"><i class="bi bi-code-slash"></i></div>
+                        <div class="project-links">
+                            <a href="#" class="proj-link"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                    {% if forloop.counter == 1 %}
+                    <h3 class="project-name">{% trans "E-Commerce API Platform" %}</h3>
+                    <p class="project-desc">{% blocktrans trimmed %}A high-performance RESTful API for a multi-vendor e-commerce platform with JWT auth and Stripe payments.{% endblocktrans %}</p>
+                    <div class="project-tags">
+                        <span class="tag">Django</span><span class="tag">DRF</span><span class="tag">PostgreSQL</span>
+                    </div>
+                    {% elif forloop.counter == 2 %}
+                    <h3 class="project-name">{% trans "Task Management System" %}</h3>
+                    <p class="project-desc">{% blocktrans trimmed %}A project management tool with real-time collaboration, Celery background tasks, and WebSocket notifications.{% endblocktrans %}</p>
+                    <div class="project-tags">
+                        <span class="tag">Django</span><span class="tag">Celery</span><span class="tag">Docker</span>
+                    </div>
+                    {% else %}
+                    <h3 class="project-name">{% trans "Microservices Auth Gateway" %}</h3>
+                    <p class="project-desc">{% blocktrans trimmed %}An OAuth 2.0 & JWT authentication gateway for microservice architecture with SSO support.{% endblocktrans %}</p>
+                    <div class="project-tags">
+                        <span class="tag">FastAPI</span><span class="tag">Python</span><span class="tag">Docker</span>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section section-alt" id="experience">
+    <div class="container">
+        <div class="experience-layout">
+            <div class="exp-left" data-aos="fade-right">
+                <div class="section-tag">{% trans "Career" %}</div>
+                <h2 class="section-title">{% blocktrans %}Work <span class="accent">Experience</span>{% endblocktrans %}</h2>
+                <p class="section-desc">
+                    {% blocktrans trimmed %}A track record of delivering real-world software solutions for businesses across multiple domains.{% endblocktrans %}
+                </p>
+            </div>
+            <div class="exp-right">
+                <div class="timeline">
+                    {% for exp in experiences %}
+                    <div class="timeline-item" data-aos="fade-left" data-aos-delay="{{ forloop.counter0 }}00">
+                        <div class="tl-dot"></div>
+                        <div class="tl-card">
+                            <div class="tl-top">
+                                <div>
+                                    <h3 class="tl-role">{{ exp.title }}</h3>
+                                    <p class="tl-company">
+                                        <i class="bi bi-building"></i> {{ exp.company }}
+                                        {% if exp.location %} · {{ exp.location }}{% endif %}
+                                    </p>
+                                </div>
+                                <div class="tl-meta">
+                                    <span class="tl-date">
+                                        {{ exp.start_date|date:"M Y" }} — {% if exp.is_current %}{% trans "Present" %}{% else %}{{ exp.end_date|date:"M Y" }}{% endif %}
+                                    </span>
+                                    {% if exp.is_current %}<span class="badge-current">{% trans "Current" %}</span>{% endif %}
+                                </div>
+                            </div>
+                            <p class="tl-desc">{{ exp.description }}</p>
+                            {% if exp.tech_used %}
+                            <div class="tl-tags">
+                                {% for tech in exp.tech_used %}
+                                <span class="tag">{{ tech }}</span>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% empty %}
+                    <div class="timeline-empty" data-aos="fade-left">
+                        <p>{% trans "Experience details coming soon." %}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section class="section" id="certificates">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <div class="section-tag center">{% trans "Credentials" %}</div>
+            <h2 class="section-title center">{% blocktrans %}My <span class="accent">Certificates</span>{% endblocktrans %}</h2>
+            <p class="section-subtitle">{% blocktrans trimmed %}Verified achievements and professional credentials.{% endblocktrans %}</p>
+        </div>
+
+        <div class="certs-grid">
+            {% for cert in certificates %}
+            <div class="cert-card" data-aos="fade-up" data-aos-delay="{{ forloop.counter0 }}00">
+                {% if cert.image %}
+                <div class="cert-frame">
+                    {% if cert.is_verified %}
+                    <div class="cert-verified"><i class="bi bi-patch-check-fill"></i> {% trans "Verified" %}</div>
+                    {% endif %}
+                    <div class="corner c-tl"></div><div class="corner c-tr"></div>
+                    <div class="corner c-bl"></div><div class="corner c-br"></div>
+                    <img src="{{ cert.image.url }}" alt="{{ cert.title }}" class="cert-img"
+                         data-cert="{{ cert.title }}">
+                    <div class="cert-hover">
+                        <button class="cert-zoom" onclick="openCert(this)">
+                            <i class="bi bi-zoom-in"></i> {% trans "View Full" %}
+                        </button>
+                    </div>
+                </div>
+                {% else %}
+                <div class="cert-frame cert-frame-placeholder">
+                    {% if cert.is_verified %}
+                    <div class="cert-verified"><i class="bi bi-patch-check-fill"></i> {% trans "Verified" %}</div>
+                    {% endif %}
+                    <div class="corner c-tl"></div><div class="corner c-tr"></div>
+                    <div class="corner c-bl"></div><div class="corner c-br"></div>
+                    <div class="cert-placeholder-icon">
+                        <i class="bi {{ cert.icon }}"></i>
+                    </div>
+                </div>
+                {% endif %}
+                <div class="cert-info">
+                    <div class="cert-icon-box"><i class="bi {{ cert.icon }}"></i></div>
+                    <div>
+                        <h4 class="cert-title">{{ cert.title }}</h4>
+                        <p class="cert-issuer"><i class="bi bi-building"></i> {{ cert.issuer }} · {{ cert.year }}</p>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <div class="cert-card" data-aos="fade-up">
+                <div class="cert-frame">
+                    <div class="cert-verified"><i class="bi bi-patch-check-fill"></i> {% trans "Verified" %}</div>
+                    <div class="corner c-tl"></div><div class="corner c-tr"></div>
+                    <div class="corner c-bl"></div><div class="corner c-br"></div>
+                    <img src="{% static 'images/image.png' %}" alt="{% trans 'IELTS Certificate' %}" class="cert-img" data-cert="{% trans 'IELTS Certificate' %}">
+                    <div class="cert-hover">
+                        <button class="cert-zoom" onclick="openCert(this)"><i class="bi bi-zoom-in"></i> {% trans "View Full" %}</button>
+                    </div>
+                </div>
+                <div class="cert-info">
+                    <div class="cert-icon-box"><i class="bi bi-translate"></i></div>
+                    <div>
+                        <h4 class="cert-title">IELTS Academic — Band 7</h4>
+                        <p class="cert-issuer"><i class="bi bi-building"></i> IDP · 2026</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Certificate Lightbox -->
+<div class="lightbox" id="certLightbox" onclick="closeLightbox()">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+        <button class="lightbox-close" onclick="closeLightbox()"><i class="bi bi-x-lg"></i></button>
+        <img src="" alt="" id="lightboxImg" class="lightbox-img">
+        <p class="lightbox-label" id="lightboxLabel"></p>
+    </div>
+</div>
+
+<!-- HACKATHONS -->
+<section class="section section-alt" id="hackathons">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <div class="section-tag center">{% trans "Achievements" %}</div>
+            <h2 class="section-title center">{% blocktrans %}Hackathons & <span class="accent">Competitions</span>{% endblocktrans %}</h2>
+            <p class="section-subtitle">{% blocktrans trimmed %}Events I've competed in and what I built under pressure.{% endblocktrans %}</p>
+        </div>
+
+        <div class="hackathons-grid">
+            {% for hack in hackathons %}
+            <div class="hack-card" data-aos="fade-up" data-aos-delay="{{ forloop.counter0 }}00">
+                <div class="hack-photo-stack">
+                    {% if hack.images.all %}
+                    {% for img in hack.images.all %}
+                    <img src="{{ img.image.url }}" alt="{{ hack.title }}" class="hack-photo{% if forloop.first %} active{% endif %}"
+                         onclick="openHackPhoto(this, '{{ hack.title|escapejs }}')">
+                    {% endfor %}
+                    {% else %}
+                    <div class="hack-photo-placeholder"><i class="bi {{ hack.icon }}"></i></div>
+                    {% endif %}
+                    {% if hack.result %}
+                    <div class="hack-result-badge"><i class="bi bi-trophy-fill"></i> {{ hack.result }}</div>
+                    {% endif %}
+                </div>
+                <div class="hack-info">
+                    <h3 class="hack-title">{{ hack.title }}</h3>
+                    <p class="hack-meta">
+                        {% if hack.organizer %}<i class="bi bi-building"></i> {{ hack.organizer }}{% endif %}
+                        {% if hack.location %} · {{ hack.location }}{% endif %}
+                    </p>
+                    <p class="hack-date"><i class="bi bi-calendar-event"></i> {{ hack.date|date:"M Y" }}</p>
+                    {% if hack.description %}<p class="hack-desc">{{ hack.description }}</p>{% endif %}
+                    {% if hack.highlight %}
+                    <p class="hack-highlight"><i class="bi bi-stars"></i> {{ hack.highlight }}</p>
+                    {% endif %}
+                    {% if hack.project_url %}
+                    <a href="{{ hack.project_url }}" target="_blank" class="hack-link">
+                        {% trans "View Project" %} <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+            {% empty %}
+            <div class="hackathons-empty" data-aos="fade-up">
+                <p>{% trans "Hackathon & competition details coming soon." %}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- LANGUAGES -->
+<section class="section" id="languages">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <div class="section-tag center">{% trans "Communication" %}</div>
+            <h2 class="section-title center">{% blocktrans %}Language <span class="accent">Proficiency</span>{% endblocktrans %}</h2>
+            <p class="section-subtitle">{% blocktrans trimmed %}Languages I speak and their proficiency levels.{% endblocktrans %}</p>
+        </div>
+
+        <div class="languages-grid">
+            <div class="lang-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="lang-header">
+                    <span class="lang-flag">🇺🇿</span>
+                    <div class="lang-title-wrap">
+                        <h3 class="lang-name">{% trans "Uzbek" %}</h3>
+                        <span class="lang-tag native"><i class="bi bi-stars"></i> {% trans "Native" %}</span>
+                    </div>
+                </div>
+                <p class="lang-level-text">{% trans "Native or Bilingual Proficiency" %}</p>
+                <div class="lang-bar-wrap">
+                    <div class="lang-bar">
+                        <div class="lang-fill" style="--fill:100%"></div>
+                    </div>
+                    <span class="lang-pct">C2</span>
+                </div>
+            </div>
+
+            <div class="lang-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="lang-header">
+                    <span class="lang-flag">🇬🇧</span>
+                    <div class="lang-title-wrap">
+                        <h3 class="lang-name">{% trans "English" %}</h3>
+                        <span class="lang-tag ielts"><i class="bi bi-patch-check-fill"></i> IELTS Band 7</span>
+                    </div>
+                </div>
+                <p class="lang-level-text">{% trans "Professional Working Proficiency" %}</p>
+                <div class="lang-bar-wrap">
+                    <div class="lang-bar">
+                        <div class="lang-fill" style="--fill:75%"></div>
+                    </div>
+                    <span class="lang-pct">C1+</span>
+                </div>
+            </div>
+
+            <div class="lang-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="lang-header">
+                    <span class="lang-flag">🇷🇺</span>
+                    <div class="lang-title-wrap">
+                        <h3 class="lang-name">{% trans "Russian" %}</h3>
+                        <span class="lang-tag learning"><i class="bi bi-book-fill"></i> {% trans "Learning" %}</span>
+                    </div>
+                </div>
+                <p class="lang-level-text">{% trans "Elementary Proficiency" %}</p>
+                <div class="lang-bar-wrap">
+                    <div class="lang-bar">
+                        <div class="lang-fill" style="--fill:25%"></div>
+                    </div>
+                    <span class="lang-pct">A2</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section-alt" id="contact">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <div class="section-tag center">{% trans "Get In Touch" %}</div>
+            <h2 class="section-title center">{% blocktrans %}Let's <span class="accent">Work Together</span>{% endblocktrans %}</h2>
+            <p class="section-subtitle">{% blocktrans trimmed %}Have a project in mind? I'd love to hear about it.{% endblocktrans %}</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info" data-aos="fade-right">
+                <div class="contact-card">
+                    <div class="contact-row">
+                        <div class="contact-icon-box"><i class="bi bi-envelope-fill"></i></div>
+                        <div>
+                            <p class="contact-label">{% trans "Email" %}</p>
+                            <a href="mailto:oxundev@gmail.com" class="contact-value">oxundev@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <div class="contact-icon-box"><i class="bi bi-geo-alt-fill"></i></div>
+                        <div>
+                            <p class="contact-label">{% trans "Location" %}</p>
+                            <p class="contact-value">{% trans "Karshi, Uzbekistan" %}</p>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <div class="contact-icon-box"><i class="bi bi-clock-fill"></i></div>
+                        <div>
+                            <p class="contact-label">{% trans "Availability" %}</p>
+                            <p class="contact-value">{% trans "Open to offers" %}</p>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com/oxunjonabdulla" target="_blank" class="social-btn" title="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/oxunjonabdullayev/" target="_blank" class="social-btn" title="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="mailto:oxundev@gmail.com" class="social-btn" title="Gmail">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrap" data-aos="fade-left" data-aos-delay="100">
+                <div class="contact-form-card">
+                    {% if messages %}
+                    {% for msg in messages %}
+                    <div class="alert alert-{{ msg.tags }}" role="alert">
+                        {{ msg }}
+                        <button class="alert-close" onclick="this.parentElement.remove()">×</button>
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+
+                    <div id="formSuccess" class="success-msg hidden">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>{% trans "Message sent! I'll get back to you soon." %}</span>
+                    </div>
+
+                    <form method="POST" id="contactForm">
+                        {% csrf_token %}
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label class="form-label">{% trans "Full Name" %}</label>
+                                <input type="text" class="form-input" name="name"
+                                       placeholder="Oxunjon Abdullayev" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">{% trans "Email Address" %}</label>
+                                <input type="email" class="form-input" name="email"
+                                       placeholder="you@example.com" required>
+                            </div>
+                            <div class="form-group full">
+                                <label class="form-label">{% trans "Subject" %}</label>
+                                <input type="text" class="form-input" name="subject"
+                                       placeholder="{% trans 'Project Collaboration' %}" required>
+                            </div>
+                            <div class="form-group full">
+                                <label class="form-label">{% trans "Message" %}</label>
+                                <textarea class="form-input" name="message" rows="5"
+                                          placeholder="{% trans 'Tell me about your project...' %}" required></textarea>
+                            </div>
+                            <div class="form-group full">
+                                <button type="submit" class="btn-primary full-width" id="submitBtn">
+                                    <span class="btn-label">{% trans "Send Message" %} <i class="bi bi-send"></i></span>
+                                    <span class="btn-loading hidden"><i class="bi bi-hourglass-split"></i> {% trans "Sending..." %}</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <span class="brand-accent"></span>OA
+                <p class="footer-tagline">{% blocktrans trimmed %}Building the backend that powers your product.{% endblocktrans %}</p>
+            </div>
+            <div class="footer-nav">
+                <a href="#about">{% trans "About" %}</a>
+                <a href="#skills">{% trans "Skills" %}</a>
+                <a href="#projects">{% trans "Projects" %}</a>
+                <a href="#experience">{% trans "Experience" %}</a>
+                <a href="#languages">{% trans "Languages" %}</a>
+                <a href="#contact">{% trans "Contact" %}</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/oxunjonabdulla" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/oxunjonabdullayev/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="mailto:oxundev@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Oxunjon Abdullayev. {% trans "All rights reserved." %}</p>
+            <p>{% blocktrans %}Crafted with <i class="bi bi-heart-fill" style="color:#ef4444"></i> using Django{% endblocktrans %}</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+{{ i18n_js|json_script:"i18nData" }}
+<script src="{% static 'portfolio/js/main.js' %}"></script>
+
+<!-- Schema.org structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Oxunjon Abdullayev",
+  "jobTitle": "{{ hero_titles.0|escapejs }}",
+  "url": "{{ site_url }}",
+  "email": "oxundev@gmail.com",
+  "image": "{{ site_url }}{% static 'images/oxun.jpg' %}",
+  "sameAs": [
+    "https://github.com/oxunjonabdulla",
+    "https://www.linkedin.com/in/oxunjonabdullayev/"
+  ],
+  "knowsAbout": ["Python", "Django", "FastAPI", "Django REST Framework", "PostgreSQL", "Docker", "REST API"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Karshi",
+    "addressCountry": "UZ"
+  }
+}
+</script>
+</body>
+</html>
